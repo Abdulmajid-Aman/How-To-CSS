@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <form>
+        <div class="image-holder">
+            <img src="https://images.unsplash.com/photo-1721228426981-fd7c37ff6870?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="profile picture">
+        </div>
+        <div class="form-container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" required >
+
+            <label for="pword"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" required >
+            
+            <button type="submit">Login</button>
+
+            <input type="checkbox" checked = "checked">
+        </div>
+
+        <div class="form-container">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forget <a href="#">password ?</a></span>
+        </div>
+    </form> -->
+
+    <!-- Button to open the modal login form -->
+     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+     <!-- The modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">
+        &times;
+        </span>
+
+        <!-- The modal content -->
+         <form class="modal-content animate">
+            <div class="image-holder">
+                <img src="https://images.unsplash.com/photo-1721228426981-fd7c37ff6870?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="profile picture">
+            </div>
+            <div class="form-container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" required >
+    
+                <label for="pword"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required >
+                
+                <button type="submit">Login</button>
+    
+                <input type="checkbox" checked = "checked">
+            </div>
+    
+            <div class="form-container">
+                <button type="button" class="cancelbtn" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                <span class="psw">Forget <a href="#">password ?</a></span>
+            </div>
+         </form>
+      </div>
+
+      <!-- Exercise -->
+      <!-- Create a pop up that lets a user know that his/her order has been received. The functionality should be done using JavaScript -->
+
+      <button id="purchase-btn">Purchase</button>
+
+      <!-- The Modal -->
+       <div id="id02" class="modal2">
+        <div class="modal-content2">
+        <div class="image-container">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <h1>Purchase Successful</h1>
+        <p>Your order has been received</p>
+        <button id="btn">Close</button>
+        </div>
+       </div>
+<script src="./JavaScript/java.js"></script>
+</body>
+</html>
