@@ -1,0 +1,39 @@
+.accordion {
+    width: 100%;
+    text-align: left;
+    background-color: rgb(211, 209, 209);
+    padding: 18px;
+    border: none;
+}
+
+.panel {
+    background-color: white;
+    padding: 10px;
+    display: none;
+    outline: none;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion::first-letter {
+    color: aqua;
+    font-size: 200%;
+}
+
+.accordion::selection {
+    color: blue;
+    background-color: yellow;
+}
+
+.accordion::after {
+    content: '\02795';
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active::after {
+    content: '\2796';
+}
