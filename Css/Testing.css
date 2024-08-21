@@ -1,0 +1,34 @@
+.accordion {
+    width: 100%;
+    background-color: aliceblue;
+    color: grey;
+    text-align: left;
+    padding: 10px;
+    border: none;
+}
+
+.accordion::after {
+    content: '\02795';
+    font-size: 14px;
+    color: black;
+    float: right;
+    margin-right: 5px;
+}
+
+.active, .accordion {
+    background-color: #ccc;
+}
+
+.active::after {
+    content: '\20796';
+}
+
+.panel {
+    /* display: none; */
+    padding:  0 10px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}

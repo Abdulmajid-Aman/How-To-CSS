@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/Testing.css">
+</head>
+<body>
+    <h1>Testing the HTML DOM element methods scrollHeight, scrollWidth and scrollIntoView</h1>
+    <p><b>scrollHeight =></b> It calculates the height of an element together with its padding. I have noticed that padding is the one that only changes it. This is because the  height is constant but the padding is the only thing that will keep on changing</p>
+        <details>
+            <summary>Answer the question to test your understanding</summary>
+            <p>Create an accordion using the scrollHeight method. In other terms make it animated. Also use pseudo-elements</p>
+        </details>
+
+    <!-- Creating the accordion -->
+     <button class="accordion">Section 1</button>
+     <div class="panel">
+        <p>This is the answer to the question I have been asked. I want to use the scrollHeight method. We first set the max-height to zero. Then when writing the javascript code, we say the height of the panel is equal to the scrollHeight. However, you should remember that this method returns a number. Because we are setting the height of the panel, height accepts pixel values. So we will have to concatenate the number and the string pixel to form a pixel value which will be in string for. Also use the pseudo-elements in the question.</p>
+     </div>
+
+     <p><strong>scrollWidth =></strong> it is similar to scrollHeight but this one calculates the width of a page including its padding</p>
+     <p><strong>ScrollTop =></strong> It sets or returns the number of pixels an element content is moves vertically. It returns a number so you should concatenate with the string to make it pixels but that depends on how you want to use it </p>
+     <p><strong>ScrollLeft =></strong></p>
+
+     <p><strong>scrollIntoView => </strong> method scrolls an element into visible area of the browser. It has a few methods.
+    </p>
+    <ul>
+        <li>element.scrollIntoView(true) <ul>
+            the top of the element will align to he top of the visible area of the scroll ancestor
+        </ul></li>
+        <li>element.scrollIntoView(false) <ul>
+            the bottom of the element will be aligned to the bottom of the visible area of the scrollbar ancestor
+        </ul></li>
+    </ul>
+     <script src="./JavaScript/Testing.js"></script>
+</body>
+</html>

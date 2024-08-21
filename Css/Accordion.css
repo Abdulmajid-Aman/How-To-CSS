@@ -35,5 +35,5 @@
 }
 
 .active::after {
-    content: '\2796';
+    content: '\20796';
 }
