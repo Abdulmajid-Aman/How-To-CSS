@@ -1,5 +1,5 @@
 let accordion = document.getElementsByClassName('accordion')
-console.log(accordion)
+console.log(accordion[0].nextElementSibling)
 
 
 
@@ -7,6 +7,8 @@ for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', (e) => {
         accordion[i].classList.toggle("active")
         let panel  = accordion[i].nextElementSibling
+        console.log(panel);
+        
         if(panel.style.display === 'block') {
             panel.style.display = 'none'
         } else {
